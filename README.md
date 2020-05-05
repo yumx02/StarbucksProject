@@ -29,15 +29,16 @@ The project goal is to combine transaction, demographic and offer data to determ
 ### Prediction strategy
 When Starbucks sends customers some discount promotions(BOGO and DISCOUNT), the reactions are classified into below:
 
-view -> complete (success)
-customers check the promotion and react on it. It's succes of the promotion offer.
-view -> NOT complete (fail)
-customers check the promotion but they don't use it.
-Not view -> complete (no_contribute)
-customers don't check the promotion but they use the promotion offer. the offer doesn't affect to the customer however the promotion costs.
-Not view -> NOT complete (no_interest)
-customers neither check and use the promotion offer.
-From the perspective of business cost performance, Starbuckswant to increase success and decrease no_contribute. I'd like to create a classification ML program to predict how customers react to a certain offer.
+view -> complete (success)  
+&emsp;customers check the promotion and react on it. It's succes of the promotion offer.  
+view -> NOT complete (fail)  
+&emsp;customers check the promotion but they don't use it.  
+Not view -> complete (no_contribute)  
+&emsp;customers don't check the promotion but they use the promotion offer. the offer doesn't affect to the customer however the promotion costs.  
+Not view -> NOT complete (no_interest)  
+&emsp;customers neither check and use the promotion offer.  
+
+From the perspective of business cost performance, Starbuckswant to increase success and decrease no_contribute. I'd like to create a classification ML program to predict how customers react to a certain offer.  
 
 ![screenshot of the output](classifier_output.png)
 
@@ -71,17 +72,25 @@ sklearn             0.21.3
     - To run ML pipeline to estimate your data.
         `python data_to_estimate/run_estimator.py data_to_estimate/*.csv`
 
-3. Go to http://0.0.0.0:3001/
-
 
 ## File Descriptions <a name="file_descriptions"></a>
 ### File and Structure
 ┣ `README.md` - this file  
 ┣ `Starbucks_Capstone_notebook.ipynb` - analyze data and draw figures  
+┣ `classifier_output.png` - output image 
+┣ data  
+┃&emsp;┣ `clean_data.db` - clean data after running data_clean.py  
+┃&emsp;┣ `data_clean.py` - python to clean data  
+┃&emsp;┣ `portfolio.json` - containing offer details   
+┃&emsp;┣ `profile.json` - user profiles      
+┃&emsp;┗ `transcript.json` - records for transactions and offers  
+┣ data_to_estimate  
+┃&emsp;┣ `estimate_data.csv` - sample data to predict (can replace or modify to yours)  
+┃&emsp;┗ `run_estimator.py` - python to run the estimator  
 ┗ data  
-&emsp;┣ `portfolio.json` - containing offer details  
-&emsp;┣ `profile.json` - user profiles    
-&emsp;┗ `transcript.json` - records for transactions and offers
+&emsp;┣ `classifier.pkl` - classifier after running estimator.py  
+&emsp;┗ `estimator.py` - python to create the classifier
+
 
 ### Dataset Overview
 The dataset contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free).
