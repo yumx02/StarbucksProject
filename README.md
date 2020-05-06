@@ -70,6 +70,8 @@ sklearn 0.21.3
 ## File Descriptions
 ### File and Structure
 ┣ README.md - this file  
+┣ sample.png - for README explain
+┣ sample_result.png - for README explain 
 ┣ Starbucks_Capstone_notebook.ipynb - analyze data and draw figures  
 ┣ classifier_output.png - output image   
 ┣ data  
@@ -78,10 +80,15 @@ sklearn 0.21.3
 ┃ ┣ portfolio.json - containing offer details  
 ┃ ┣ profile.json - user profiles  
 ┃ ┗ transcript.json - records for transactions and offers  
-┣ data_to_estimate    
-┃ ┣ estimate_data.csv - sample data to predict (can replace or modify to yours)    
-┃ ┗ run_estimator.py     - python to run the estimator  
-┗ data    
+┣ app 
+┃ ┣ main.py - python to run the estimator  
+┃ ┣ static  
+┃ ┃&emsp;┗ style.css  
+┃ ┗ templates     
+┃ &emsp;┣ index.html   
+┃ &emsp;┣ layout.html  
+┃ &emsp;┗ output.html  
+┗ model   
  ┣ classifier.pkl - classifier after running estimator.py  
  ┗ estimator.py - python to create the classifier
 
