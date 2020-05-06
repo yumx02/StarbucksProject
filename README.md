@@ -27,14 +27,14 @@ The project goal is to combine transaction, demographic and offer data to determ
 ### Prediction strategy
 When Starbucks sends customers some discount promotions(BOGO and DISCOUNT), the reactions are classified into below:
 
-view -> complete (success)
- customers check the promotion and react on it. It's succes of the promotion offer.
-view -> NOT complete (fail)
- customers check the promotion but they don't use it.
-Not view -> complete (no_contribute)
- customers don't check the promotion but they use the promotion offer. the offer doesn't affect to the customer however the promotion costs.
-Not view -> NOT complete (no_interest)
- customers neither check and use the promotion offer.
+view -> complete (success)  
+ customers check the promotion and react on it. It's succes of the promotion offer.  
+view -> NOT complete (fail)  
+ customers check the promotion but they don't use it.  
+Not view -> complete (no_contribute)  
+ customers don't check the promotion but they use the promotion offer. the offer doesn't affect to the customer however the promotion costs.  
+Not view -> NOT complete (no_interest)  
+ customers neither check and use the promotion offer.  
 
 From the perspective of business cost performance, Starbuckswant to increase success and decrease no_contribute. I'd like to create a classification ML program to predict how customers react to a certain offer.
 
@@ -57,10 +57,10 @@ sklearn 0.21.3
 - To run clean_data.py which cleans data and stores in database   
 'python data/data_clean.py data/portfolio.json data/profile.json data/transcript.json'
 - To run ML pipeline which trains classifier and saves   
-'python model/estimator.py data/data_clean.db model/classifier.pkl'
+'python model/estimator.py data/data_clean.db model/classifier.pkl' 
 
 2. Run the following command in the app's directory to run the web app.
-    `python run.py`
+    'python run.py'
 
 3. Go to http://127.0.0.1:5000/
 
