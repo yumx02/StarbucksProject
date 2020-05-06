@@ -1,8 +1,8 @@
 # Starbucks Capstone Challenge
 ## Table of Content]
-[Project Overview](#project_overview)  
+[ProjectOverview](#project_overview)  
 [Installation](#installation)  
-[File Descriptions](#file_description)  
+[FileDescriptions](#file_description)   
 [Summary](#summary)  
 [Acknowledgements](Acknowledgements)  
 ## Project Overview
@@ -14,8 +14,10 @@ prediction input page view
 ![sample](sample.png)  
 
 prediction result view   
-![sample_result](sample_result.png)  
- 
+
+|![sample_result](sample_result.png)|
+|:-:|
+
 
 ### The motivation for the project
 In the past, mass marketing such as commercials and advertisements was the mainstream, but with the spread of the Internet, it has become necessary to carry out promotional measures tailored to each customer. In 1 to 1 marketing, by implementing promotions that are suitable for the customer, it is possible to make a good impression on the customer and at the same time optimize the business cost by appropriately distributing the promotion expenses.
