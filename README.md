@@ -81,7 +81,7 @@ sklearn 0.21.3
 ┃ ┣ data_clean.py - python to clean data  
 ┃ ┣ portfolio.json - containing offer details  
 ┃ ┣ profile.json - user profiles  
-┃ ┗ transcript.json - records for transactions and offers  　
+┃ ┗ transcript.json - records for transactions and offers  
 ┣ app  
 ┃ ┣ main.py - python to run the estimator  
 ┃ ┣ static  
@@ -91,7 +91,7 @@ sklearn 0.21.3
 ┃ &emsp;┣ layout.html  
 ┃ &emsp;┗ output.html  
 ┗ model   
- ┣ classifier.pkl - classifier after running estimator.py 　 
+ ┣ classifier.pkl - classifier after running estimator.py  
  ┗ estimator.py - python to create the classifier  
 
 ### Dataset Overview
