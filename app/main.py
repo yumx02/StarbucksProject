@@ -58,11 +58,6 @@ def clean_imput_data(result):
     return imput_data
 
 
-
-
-
-
-
 app = Flask(__name__)
 #indexページ(フォーム画面)
 @app.route('/')

@@ -10,6 +10,13 @@ This project is about discovering what is the best offer for starbucks customers
 
 This is a classifier that predicts customer response by entering customer and offer information. The metric is the accuracy of the estimator.
 
+prediction input page view
+![sample](sample.png)
+
+prediction result view 
+![sample_result](sample_result.png)
+
+
 ### The motivation for the project
 In the past, mass marketing such as commercials and advertisements was the mainstream, but with the spread of the Internet, it has become necessary to carry out promotional measures tailored to each customer. In 1 to 1 marketing, by implementing promotions that are suitable for the customer, it is possible to make a good impression on the customer and at the same time optimize the business cost by appropriately distributing the promotion expenses.
 
@@ -52,7 +59,10 @@ sklearn 0.21.3
 - To run ML pipeline which trains classifier and saves   
 'python model/estimator.py data/data_clean.db model/classifier.pkl'
 
-2. Run the following command in the project's root directory to run the classifier
+2. Run the following command in the app's directory to run the web app.
+    `python run.py`
+
+3. Go to http://127.0.0.1:5000/
 
 - To run ML pipeline to estimate your data.   
 'python data_to_estimate/run_estimator.py data_to_estimate/'
