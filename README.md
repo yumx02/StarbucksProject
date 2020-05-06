@@ -72,8 +72,8 @@ sklearn 0.21.3
 ## File Descriptions
 ### File and Structure
 ┣ README.md - this file  
-┣ sample.png - for README explain
-┣ sample_result.png - for README explain 
+┣ sample.png - for README explain  
+┣ sample_result.png - for README explain  
 ┣ Starbucks_Capstone_notebook.ipynb - analyze data and draw figures  
 ┣ classifier_output.png - output image   
 ┣ data  
@@ -81,8 +81,8 @@ sklearn 0.21.3
 ┃ ┣ data_clean.py - python to clean data  
 ┃ ┣ portfolio.json - containing offer details  
 ┃ ┣ profile.json - user profiles  
-┃ ┗ transcript.json - records for transactions and offers  
-┣ app 
+┃ ┗ transcript.json - records for transactions and offers  　
+┣ app  
 ┃ ┣ main.py - python to run the estimator  
 ┃ ┣ static  
 ┃ ┃&emsp;┗ style.css  
@@ -91,8 +91,8 @@ sklearn 0.21.3
 ┃ &emsp;┣ layout.html  
 ┃ &emsp;┗ output.html  
 ┗ model   
- ┣ classifier.pkl - classifier after running estimator.py  
- ┗ estimator.py - python to create the classifier
+ ┣ classifier.pkl - classifier after running estimator.py 　 
+ ┗ estimator.py - python to create the classifier  
 
 ### Dataset Overview
 The dataset contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. Once every few days, Starbucks sends out an offer to users of the mobile app. An offer can be merely an advertisement for a drink or an actual offer such as a discount or BOGO (buy one get one free).
