@@ -9,15 +9,6 @@ from sqlalchemy import create_engine
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
 
-'''
-# load data
-engine = create_engine('sqlite:///data/clean_data.db')
-
-portfolio = pd.read_sql_table('portfolio', engine)
-profile = pd.read_sql_table('profile', engine)
-tr_transaction = pd.read_sql_table('tr_transaction', engine)
-tr_offer = pd.read_sql_table('tr_offer', engine)
-'''
 
 # load data
 def load_data(estimate_data_path):
@@ -34,16 +25,17 @@ def load_data(estimate_data_path):
     return estimate_data
 
 # load model
-model = pickle.load(open('model/classifier.pkl', 'rb'))
+model = pickle.load(open('/model/classifier.pkl', 'rb'))
 
 # use model to predict classification for query
-### classification_labels = model.predict([query])[0]
-
-def main():
+def main(imput_data):
+    '''
     if len(sys.argv) == 2:
         estimate_data_path = sys.argv[1:]
 
         estimate_data = load_data(estimate_data_path)
+    '''
+        estimate_data = imput_data
         print("--------------")
         print("Estimate data")
         print(estimate_data)
@@ -53,13 +45,7 @@ def main():
         print("--------------")
         print("Estimate result")
         print(y_pred)
-
-
-    else:
-        print('Please provide the filepath of the disaster messages database '\
-              'as the first argument and the filepath of the pickle file to '\
-              'save the model to as the second argument. \n\nExample: python '\
-              'train_classifier.py ../data/DisasterResponse.db classifier.pkl')
+    return y_pred
 
 if __name__ == '__main__':
     main()

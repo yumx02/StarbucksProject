@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+{% block body %}
+<h2>How the customer react to the offer?</h2>
+    <form action = "output/" method = "POST">
+    <h3>Imput the condition below:</h3>
+        <h4>Customer</h4>
+            <h5>Age</h5>
+            <p><input type="text" name="age" size="5" minlength="1" maxlength="3"　required  placeholder="40"></p>
+
+            <h5>Income($/year)</h5>
+            <p><input type="text" name="income" size="10" minlength="1" maxlength="10"　required  placeholder="50000"></p>
+
+            <h5>Became member on</h5>
+            <p><input type="text" name="became_member_on" size="10" minlength="1" maxlength="10"　required  placeholder="2017"></p>
+
+            <h5>Gendere</h5>
+            <select name="gender">
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="o">Other</option>
+            </select>
+
+        <h4>Offer</h4>
+            <h5>Offer Type</h5>
+            <select name="offer_type">
+                <option value="bogo">BOGO</option>
+                <option value="Discount">Discount</option>
+            </select>
+
+            <h5>Difficulty</h5>
+            <p><input type="text" name="difficulty" size="10" minlength="1" maxlength="10"　required  placeholder="10"></p>
+
+            <h5>Reward</h5>
+            <p><input type="text" name="reward" size="10" minlength="1" maxlength="10"　required  placeholder="10"></p>
+
+            <h5>Duration</h5>
+            <p><input type="text" name="duration" size="10" minlength="1" maxlength="10"　required  placeholder="7"></p>
+
+            <h5>Channel</h5>
+            <select name="channel">
+                <option value="mobile">mobile</option>
+                <option value="email">email</option>
+                <option value="web">web</option>
+                <option value="social">social</option>
+
+
+
+            </select>
+
+
+<p><input class="button" type="submit" value="Predict"></p>
+</form>
+{% endblock %}
